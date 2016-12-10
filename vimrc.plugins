@@ -23,3 +23,4 @@ nmap <leader>ff :Files<cr>
 
 call dein#add('python-rope/ropevim')
 call dein#add('Shougo/deoplete.nvim')
+call dein#add('christoomey/vim-tmux-navigator')

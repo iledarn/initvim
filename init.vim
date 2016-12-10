@@ -1,0 +1,37 @@
+set runtimepath^=~/.config/nvim/dein/repos/github.com/Shougo/dein.vim
+
+call dein#begin(expand('~/.config/nvim/dein'))
+
+source ~/.config/nvim/initvim.plugins
+
+call dein#end()
+
+filetype plugin indent on
+
+if dein#check_install()
+  echo "installing plugins"
+  call dein#install()
+endif
+
+" display a bar instead of a block in insert mode
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+" Writes to the unnamed register also writes to the * and + registers. This
+" makes it easy to interact with the system clipboard
+if has('unnamedplus')
+  set clipboard=unnamedplus
+else
+  set clipboard=unnamed
+endif
+
+" Ctrl-N to disable search match highlight
+nmap <silent> <C-N> :silent noh<CR>
+
+" Ctrol-Tab to switch between 2 last buffers
+nmap <leader><Tab> :b#<cr>
+nmap <leader>w :up<cr>
+
+let ropevim_vim_completion=1
+
+colorscheme solarized
+set background=dark

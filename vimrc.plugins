@@ -1,0 +1,25 @@
+call dein#add('Shougo/dein.vim')
+
+let mapleader = "\<Space>"
+
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
+
+let g:airline_powerline_fonts=1
+let g:airline_theme='solarized' " dark simple badwolf solarized solarized2
+set noshowmode
+
+call dein#add('altercation/vim-colors-solarized')
+
+call dein#add('junegunn/fzf.vim')
+
+if executable("ag") && ('' == $FZF_DEFAULT_COMMAND)
+  let $FZF_DEFAULT_COMMAND = "ag --follow --nocolor --nogroup -g ''"
+endif
+
+set rtp+=/home/ildar/.fzf
+
+nmap <leader>ff :Files<cr>
+
+call dein#add('python-rope/ropevim')
+call dein#add('Shougo/deoplete.nvim')

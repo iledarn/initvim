@@ -24,3 +24,10 @@ nmap <leader>ff :Files<cr>
 call dein#add('python-rope/ropevim')
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('christoomey/vim-tmux-navigator')
+call dein#add('Shougo/deoplete.nvim')
+call dein#add('zchee/deoplete-jedi')
+call dein#add('neomake/neomake')
+call dein#add('tpope/vim-fugitive')
+call dein#add('Merginal')
+
+nmap <leader>gs :Gstatus<cr>

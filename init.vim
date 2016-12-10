@@ -29,7 +29,7 @@ nmap <silent> <C-N> :silent noh<CR>
 
 " Ctrol-Tab to switch between 2 last buffers
 nmap <leader><Tab> :b#<cr>
-nmap <leader>w :up<cr>
+nmap <leader>w :w<cr>
 
 colorscheme solarized
 set background=dark

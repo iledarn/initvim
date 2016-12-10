@@ -2,7 +2,7 @@ set runtimepath^=~/.config/nvim/dein/repos/github.com/Shougo/dein.vim
 
 call dein#begin(expand('~/.config/nvim/dein'))
 
-source ~/.config/nvim/initvim.plugins
+source ~/.config/nvim/vimrc.plugins
 
 call dein#end()
 
@@ -30,8 +30,6 @@ nmap <silent> <C-N> :silent noh<CR>
 " Ctrol-Tab to switch between 2 last buffers
 nmap <leader><Tab> :b#<cr>
 nmap <leader>w :up<cr>
-
-let ropevim_vim_completion=1
 
 colorscheme solarized
 set background=dark

@@ -17,6 +17,8 @@ if executable("ag") && ('' == $FZF_DEFAULT_COMMAND)
   let $FZF_DEFAULT_COMMAND = "ag --follow --nocolor --nogroup -g ''"
 endif
 
+nmap <leader>k :Ag<space>
+
 set rtp+=/home/ildar/.fzf
 
 nmap <leader>ff :Files<cr>
@@ -29,5 +31,20 @@ call dein#add('zchee/deoplete-jedi')
 call dein#add('neomake/neomake')
 call dein#add('tpope/vim-fugitive')
 call dein#add('Merginal')
+call dein#add('airblade/vim-gitgutter')
+call dein#add('tpope/vim-sleuth')
+call dein#add('tpope/vim-unimpaired')
+call dein#add('tpope/vim-repeat')
+call dein#add('tpope/vim-commentary')
+call dein#add('tpope/vim-surround')
+call dein#add('svermeulen/vim-easyclip')
+call dein#add('tpope/vim-endwise')
+call dein#add('tpope/vim-rsi')
+call dein#add('tpope/vim-obsession')
+call dein#add('mileszs/ack.vim')
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 nmap <leader>gs :Gstatus<cr>

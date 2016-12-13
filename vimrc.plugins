@@ -66,9 +66,48 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nmap <leader>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
 nmap <leader>y :Unite -no-split -buffer-name=yank    history/yank<cr>
 nmap <leader>bb :Denite buffer<cr>
+
+" Change file_rec command.
+call denite#custom#var('file_rec', 'command',
+  \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+
+" Change mappings.
+call denite#custom#map(
+  \ 'insert',
+  \ '<C-j>',
+  \ '<denite:move_to_next_line>',
+  \ 'noremap'
+\)
+call denite#custom#map(
+  \ 'insert',
+  \ '<C-k>',
+  \ '<denite:move_to_previous_line>',
+  \ 'noremap'
+\)
+" Change matchers.
+" call denite#custom#source(
+" \ 'file_mru', 'matchers', ['matcher_fuzzy', 'matcher_project_files'])
+" call denite#custom#source(
+" \ 'file_rec', 'matchers', ['matcher_cpsm'])
+
+" Change sorters.
+" call denite#custom#source(
+" \ 'file_rec', 'sorters', ['sorter_sublime'])
+
+" Change ignore_globs
+call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+  \ [ '.git/', '.ropeproject/', '__pycache__/',
+  \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
+
+call denite#custom#alias('source', 'file_rec/git', 'file_rec')
+call denite#custom#var('file_rec/git', 'command',
+\ ['git', 'ls-files', '-co', '--exclude-standard'])
+nnoremap <silent> <C-p> :<C-u>Denite
+\ `finddir('.git', ';') != '' ? 'file_rec/git' : 'file_rec'`<CR>
+
 nmap <leader>t :Denite -buffer-name=files file_rec<cr>
 " nmap <leader>f :Unite -buffer-name=files -start-insert file<cr>
-nmap <leader>r :UniteWithProjectDir -buffer-name=mru -start-insert file_mru<cr>
+nmap <leader>r :DeniteProjectDir file_mru<cr>
 nmap <leader>b :Unite -no-split -quick-match buffer<cr>
 " let g:unite_split_rule = "botright"
 

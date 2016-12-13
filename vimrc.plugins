@@ -70,6 +70,7 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nmap <leader>o :Unite -buffer-name=outline -start-insert outline<cr>
 nmap <leader>y :Unite -buffer-name=yank    history/yank<cr>
 nmap <leader>b :Unite -buffer-name=buffer -start-insert buffer<cr>
+nmap <leader>f :Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
 " let g:unite_split_rule = "botright"
 
 nmap <leader>gs :Gstatus<cr>

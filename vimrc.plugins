@@ -66,7 +66,7 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 nmap <leader>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
 nmap <leader>y :Unite -no-split -buffer-name=yank    history/yank<cr>
 nmap <leader>bb :Unite -no-split -buffer-name=buffer -start-insert buffer<cr>
-" nmap <leader>t :Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
+nmap <leader>t :Denite -buffer-name=files file_rec<cr>
 " nmap <leader>f :Unite -buffer-name=files -start-insert file<cr>
 nmap <leader>r :UniteWithProjectDir -buffer-name=mru -start-insert file_mru<cr>
 nmap <leader>b :Unite -no-split -quick-match buffer<cr>

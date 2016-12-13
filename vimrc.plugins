@@ -18,9 +18,6 @@ if executable("ag") && ('' == $FZF_DEFAULT_COMMAND)
   let $FZF_DEFAULT_COMMAND = "ag --follow --nocolor --nogroup -g ''"
 endif
 
-" nmap <leader>k :Ag<space>
-" nmap <leader>* :Ag <C-R><C-w><CR>
-
 set rtp+=$HOME/.fzf
 
 nmap <leader>ff :Files<cr>

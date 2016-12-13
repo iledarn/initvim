@@ -66,7 +66,7 @@ endif
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nmap <leader>o :Unite -buffer-name=outline -start-insert outline<cr>
+nmap <leader>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
 nmap <leader>y :Unite -buffer-name=yank    history/yank<cr>
 nmap <leader>bb :Unite -buffer-name=buffer -start-insert buffer<cr>
 nmap <leader>t :Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>

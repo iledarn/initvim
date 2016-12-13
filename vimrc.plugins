@@ -18,8 +18,8 @@ if executable("ag") && ('' == $FZF_DEFAULT_COMMAND)
   let $FZF_DEFAULT_COMMAND = "ag --follow --nocolor --nogroup -g ''"
 endif
 
-nmap <leader>k :Ag<space>
-nmap <leader>* :Ag <C-R><C-w><CR>
+" nmap <leader>k :Ag<space>
+" nmap <leader>* :Ag <C-R><C-w><CR>
 
 set rtp+=$HOME/.fzf
 
@@ -44,7 +44,7 @@ call dein#add('svermeulen/vim-easyclip')
 call dein#add('tpope/vim-endwise')
 call dein#add('tpope/vim-rsi')
 call dein#add('tpope/vim-obsession')
-call dein#add('mileszs/ack.vim')
+call dein#add('rking/ag.vim')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/neoyank.vim')
@@ -61,7 +61,6 @@ call dein#add('tpope/vim-markdown')
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']
   set grepprg=ag\ --nogroup\ --nocolor
-  let g:ackprg = 'ag --vimgrep'
 endif
 
 " Unite
@@ -74,3 +73,6 @@ nmap <leader>f :Unite -buffer-name=files -start-insert buffer file_rec/async:!<c
 " let g:unite_split_rule = "botright"
 
 nmap <leader>gs :Gstatus<cr>
+
+nmap <leader>* :Ag <c-r>=expand("<cword>")<cr><cr>
+nmap <leader>/ :Ag<space>     

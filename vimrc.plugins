@@ -46,13 +46,11 @@ call dein#add('tpope/vim-endwise')
 call dein#add('tpope/vim-rsi')
 call dein#add('tpope/vim-obsession')
 call dein#add('mileszs/ack.vim')
-" call dein#add('majutsushi/tagbar')
-" nmap <leader>t :TagbarToggle<cr>
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/vimfiler.vim')
-nmap <leader>t :VimFilerExplorer -toggle<cr>
+nmap <leader>p :VimFilerExplorer -toggle<cr>
 let g:vimfiler_as_default_explorer = 1
 call dein#add('Shougo/unite-outline')
 

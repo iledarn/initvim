@@ -19,7 +19,7 @@ if executable("ag") && ('' == $FZF_DEFAULT_COMMAND)
 endif
 
 nmap <leader>k :Ag<space>
-nmap <leader>f :Ag <C-R><C-w><CR>
+nmap <leader>* :Ag <C-R><C-w><CR>
 
 set rtp+=$HOME/.fzf
 

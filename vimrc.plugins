@@ -64,8 +64,8 @@ endif
 " Unite
 let g:unite_source_history_yank_enable = 1
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
-nmap <leader>o :Unite -no-split -buffer-name=outline -start-insert outline<cr>
-nmap <leader>y :Unite -no-split -buffer-name=yank    history/yank<cr>
+nmap <leader>o :Denite unite:outline<cr>
+nmap <leader>y :Denite unite:history/yank<cr>
 nmap <leader>bb :Denite buffer<cr>
 
 " Change file_rec command.
@@ -85,17 +85,7 @@ call denite#custom#map(
   \ '<denite:move_to_previous_line>',
   \ 'noremap'
 \)
-" Change matchers.
-" call denite#custom#source(
-" \ 'file_mru', 'matchers', ['matcher_fuzzy', 'matcher_project_files'])
-" call denite#custom#source(
-" \ 'file_rec', 'matchers', ['matcher_cpsm'])
 
-" Change sorters.
-" call denite#custom#source(
-" \ 'file_rec', 'sorters', ['sorter_sublime'])
-
-" Change ignore_globs
 call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
   \ [ '.git/', '.ropeproject/', '__pycache__/',
   \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])

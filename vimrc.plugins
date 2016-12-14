@@ -1,4 +1,5 @@
 call dein#add('Shougo/dein.vim')
+call dein#add('haya14busa/dein-command.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 
 let mapleader = "\<Space>"

@@ -34,6 +34,3 @@ set background=dark
 
 call deoplete#enable()
 autocmd CompleteDone * pclose " To close preview window of deoplete automagically
-
-" bind K to grep word under cursor
-nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>

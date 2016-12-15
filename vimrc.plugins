@@ -41,10 +41,11 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('zchee/deoplete-jedi')
 call dein#add('neomake/neomake')
 call dein#add('tpope/vim-fugitive')
+call dein#add('int3/vim-extradite')
 call dein#add('jreybert/vimagit')
 call dein#add('Merginal')
 call dein#add('airblade/vim-gitgutter')
-call dein#add('gregsexton/gitv')
+" call dein#add('gregsexton/gitv')
 call dein#add('tpope/vim-sleuth')
 call dein#add('tpope/vim-unimpaired')
 call dein#add('tpope/vim-repeat')
@@ -65,6 +66,7 @@ call dein#add('tsukkee/unite-tag')
 call dein#add('Shougo/unite-outline')
 call dein#add('ekalinin/Dockerfile.vim')
 call dein#add('michaeljsmith/vim-indent-object')
+" call dein#add('wincent/command-t')
 " call dein#add('tpope/vim-markdown')
 
 if executable('ag')
@@ -107,7 +109,7 @@ call denite#custom#var('file_rec/git', 'command',
 nnoremap <silent> <C-p> :<C-u>Denite
 \ `finddir('.git', ';') != '' ? 'file_rec/git' : 'file_rec'`<CR>
 
-nmap <leader>t :Denite -buffer-name=files file_rec<cr>
+nmap <leader>f :Denite -buffer-name=files file_rec<cr>
 " nmap <leader>r :DeniteProjectDir file_mru<cr>
 nmap <leader>b :Unite -no-split -quick-match buffer<cr>
 " let g:unite_split_rule = "botright"

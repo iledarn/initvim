@@ -66,8 +66,11 @@ call dein#add('tsukkee/unite-tag')
 call dein#add('Shougo/unite-outline')
 call dein#add('ekalinin/Dockerfile.vim')
 call dein#add('michaeljsmith/vim-indent-object')
+call dein#add('simnalamburt/vim-mundo')
 " call dein#add('wincent/command-t')
 " call dein#add('tpope/vim-markdown')
+
+nmap <leader>u :MundoToggle<cr>
 
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']

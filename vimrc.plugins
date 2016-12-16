@@ -92,6 +92,7 @@ let g:delimitMate_expand_cr = 1
 " call dein#add('tpope/vim-markdown')
 
 call dein#add('dbakker/vim-projectroot')
+call dein#add('tpope/vim-sensible')
 
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']

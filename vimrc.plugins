@@ -115,6 +115,18 @@ call dein#add('othree/yajs.vim')
 call dein#add('pangloss/vim-javascript')
 " call dein#add('ternjs/tern_for_vim')
 
+call dein#add('osyo-manga/vim-anzu')
+let g:airline#extensions#anzu#enabled = 1
+
+" mapping
+nmap n <Plug>(anzu-n-with-echo)
+nmap N <Plug>(anzu-N-with-echo)
+nmap * <Plug>(anzu-star-with-echo)
+nmap # <Plug>(anzu-sharp-with-echo)
+
+" clear status
+nmap <Esc><Esc> <Plug>(anzu-clear-search-status)
+
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']
   set grepprg=ag\ --nogroup\ --nocolor

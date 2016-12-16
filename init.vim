@@ -35,4 +35,5 @@ call deoplete#enable()
 autocmd CompleteDone * pclose " To close preview window of deoplete automagically
 
 " save the file when you switch buffers
-set autowrite
+" set autowrite
+set hidden

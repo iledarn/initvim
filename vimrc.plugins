@@ -111,6 +111,7 @@ call dein#add('dbakker/vim-projectroot')
 call dein#add('tpope/vim-sensible')
 call dein#add('sukima/xmledit')
 call dein#add('othree/yajs.vim')
+call dein#add('pangloss/vim-javascript')
 
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']

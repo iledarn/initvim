@@ -36,7 +36,11 @@ function! s:fzf_buffers_mru()
 endfunction
 
 call dein#add('python-rope/ropevim')
+
+let ropevim_vim_completion=1
+let ropevim_extended_complete=1
 autocmd FileType python setlocal omnifunc=RopeCompleteFunc
+
 call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('zchee/deoplete-jedi')

@@ -16,8 +16,7 @@ endif
 " display a bar instead of a block in insert mode
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
-" Writes to the unnamed register also writes to the * and + registers. This
-" makes it easy to interact with the system clipboard
+" Writes to the unnamed register also writes to the * and + registers. This makes it easy to interact with the system clipboard
 if has('unnamedplus')
   set clipboard=unnamedplus
 else

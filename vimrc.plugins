@@ -46,6 +46,7 @@ call dein#add('jreybert/vimagit')
 call dein#add('Merginal')
 call dein#add('airblade/vim-gitgutter')
 call dein#add('gregsexton/gitv')
+call dein#add('junegunn/gv.vim')
 call dein#add('tpope/vim-sleuth')
 call dein#add('tpope/vim-unimpaired')
 call dein#add('tpope/vim-repeat')
@@ -84,6 +85,8 @@ let g:delimitMate_expand_cr = 1
 
 " call dein#add('wincent/command-t')
 " call dein#add('tpope/vim-markdown')
+
+call dein#add('dbakker/vim-projectroot')
 
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']

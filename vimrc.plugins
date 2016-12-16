@@ -3,6 +3,7 @@ call dein#add('haya14busa/dein-command.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 
 let mapleader = "\<Space>"
+let maplocalleader = ","
 
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
@@ -93,6 +94,7 @@ let g:delimitMate_expand_cr = 1
 
 call dein#add('dbakker/vim-projectroot')
 call dein#add('tpope/vim-sensible')
+call dein#add('sukima/xmledit')
 
 if executable('ag')
   let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '-g', '']

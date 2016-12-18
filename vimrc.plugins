@@ -119,9 +119,6 @@ call dein#add('pangloss/vim-javascript')
 call dein#add('osyo-manga/vim-anzu')
 let g:airline#extensions#anzu#enabled = 1
 
-call dein#add('mhinz/vim-startify')
-call dein#add('tmux-plugins/vim-tmux-focus-events')
-
 " mapping
 nmap n <Plug>(anzu-n-with-echo)
 nmap N <Plug>(anzu-N-with-echo)
@@ -212,3 +209,8 @@ autocmd FileType vimfiler call s:vimfiler_settings()
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 let g:deoplete#auto_completion_start_length = 3
+
+call dein#add('mhinz/vim-startify')
+call dein#add('tmux-plugins/vim-tmux-focus-events')
+call dein#add('kana/vim-textobj-user')
+call dein#add('bps/vim-textobj-python')

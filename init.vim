@@ -39,3 +39,6 @@ set autoread
 
 " highlight the current line when the current mode is Insert
 autocmd InsertEnter,InsertLeave * set cul!
+
+" Default option for mouse in neovim is 'a' (enabled). Don't wanna that
+set mouse=r

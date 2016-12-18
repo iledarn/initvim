@@ -42,3 +42,6 @@ autocmd InsertEnter,InsertLeave * set cul!
 
 " Default option for mouse in neovim is 'a' (enabled). Don't wanna that
 set mouse=r
+
+" Don't use Ex mode, use Q for formatting
+map Q gq

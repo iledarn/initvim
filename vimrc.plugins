@@ -178,7 +178,7 @@ nmap <leader>b :Unite -no-split -quick-match buffer<cr>
 nmap <leader>gs :Gstatus<cr>
 
 nmap <leader>* :Ag <c-r>=expand("<cword>")<cr><cr>
-nmap <leader>/ :Ag<space>     
+nmap <leader>// :Ag<space>     
 
 " VimFiler
 nmap <leader>\ :VimFilerExplorer -find<cr>

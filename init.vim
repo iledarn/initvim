@@ -35,3 +35,4 @@ call deoplete#enable()
 autocmd CompleteDone * pclose " To close preview window of deoplete automagically
 
 set hidden
+set autoread

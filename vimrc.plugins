@@ -55,7 +55,7 @@ endfunction
 au BufRead,BufNewFile *.py,*pyw imap <Tab> <C-R>=TabWrapperRope()<CR>
 au BufRead,BufNewFile *.py,*pyw imap <silent><C-Space> <ESC>l:RopeCodeAssist<CR>
 au BufRead,BufNewFile *.py,*pyw nmap <silent><C-Space> :RopeCodeAssist<CR>
-au BufRead,BufNewFile *.py,*pyw nnoremap <silent>, :call RopeShowDoc()<CR>
+" au BufRead,BufNewFile *.py,*pyw nnoremap <silent>, :call RopeShowDoc()<CR>
 
 call dein#add('hynek/vim-python-pep8-indent')
 call dein#add('christoomey/vim-tmux-navigator')
@@ -63,7 +63,7 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('zchee/deoplete-jedi')
 call dein#add('neomake/neomake')
 call dein#add('tpope/vim-fugitive')
-" call dein#add('sjl/splice.vim')
+call dein#add('sjl/splice.vim')
 call dein#add('int3/vim-extradite')
 call dein#add('jreybert/vimagit')
 call dein#add('Merginal')

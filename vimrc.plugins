@@ -120,6 +120,7 @@ call dein#add('osyo-manga/vim-anzu')
 let g:airline#extensions#anzu#enabled = 1
 
 call dein#add('mhinz/vim-startify')
+call dein#add('tmux-plugins/vim-tmux-focus-events')
 
 " mapping
 nmap n <Plug>(anzu-n-with-echo)

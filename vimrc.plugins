@@ -113,6 +113,7 @@ let g:delimitMate_expand_cr = 1
 call dein#add('dbakker/vim-projectroot')
 call dein#add('tpope/vim-sensible')
 call dein#add('sukima/xmledit')
+call dein#add('actionshrimp/vim-xpath')
 call dein#add('othree/yajs.vim')
 call dein#add('pangloss/vim-javascript')
 " call dein#add('ternjs/tern_for_vim')

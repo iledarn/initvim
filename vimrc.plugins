@@ -119,6 +119,8 @@ call dein#add('pangloss/vim-javascript')
 call dein#add('osyo-manga/vim-anzu')
 let g:airline#extensions#anzu#enabled = 1
 
+call dein#add('mhinz/vim-startify')
+
 " mapping
 nmap n <Plug>(anzu-n-with-echo)
 nmap N <Plug>(anzu-N-with-echo)

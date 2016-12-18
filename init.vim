@@ -36,3 +36,6 @@ autocmd CompleteDone * pclose " To close preview window of deoplete automagicall
 
 set hidden
 set autoread
+
+" highlight the current line when the current mode is Insert
+autocmd InsertEnter,InsertLeave * set cul!

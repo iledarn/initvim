@@ -45,3 +45,5 @@ set mouse=r
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
+
+set number

@@ -36,6 +36,7 @@ autocmd CompleteDone * pclose " To close preview window of deoplete automagicall
 
 set hidden
 set autoread
+set autowrite
 
 " highlight the current line when the current mode is Insert
 autocmd InsertEnter,InsertLeave * set cul!
@@ -47,3 +48,11 @@ set mouse=r
 map Q gq
 
 set number
+
+set nobackup       "no backup files
+set nowritebackup  "only in case you don't want a backup file while editing
+set noswapfile     "no swap files
+
+" smash escape
+" inoremap jk <esc>
+" inoremap kj <esc>

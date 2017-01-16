@@ -273,3 +273,6 @@ call dein#add('vim-scripts/dbext.vim')
 call dein#add('godlygeek/tabular')
 call dein#add('plasticboy/vim-markdown', {'on_ft' : 'markdown'})
 call dein#add('itchyny/vim-cursorword')
+call dein#add('t9md/vim-choosewin')
+" invoke with '-'
+nmap  -  <Plug>(choosewin)

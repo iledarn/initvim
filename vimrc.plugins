@@ -270,3 +270,4 @@ call dein#add('hdima/python-syntax')
 let python_highlight_all = 1
 call dein#add('vim-scripts/SQLComplete.vim')
 call dein#add('vim-scripts/dbext.vim')
+call dein#add('airblade/vim-rooter')

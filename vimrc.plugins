@@ -5,68 +5,68 @@ call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 let mapleader = "\<Space>"
 let maplocalleader = ","
 
-call dein#add('vim-airline/vim-airline')
-let g:airline#extensions#tabline#enabled = 1
-scriptencoding utf-8
-let g:airline_powerline_fonts = 1
-let g:airline_skip_empty_sections = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tmuxline#enabled = 1
-let g:Powerline_sybols = 'unicode'
-let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#buffer_nr_format = '%s:'
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#fnamecollapse = 1
-let g:airline#extensions#tabline#fnametruncate = 0
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-nmap <leader>1 <Plug>AirlineSelectTab1
-nmap <leader>2 <Plug>AirlineSelectTab2
-nmap <leader>3 <Plug>AirlineSelectTab3
-nmap <leader>4 <Plug>AirlineSelectTab4
-nmap <leader>5 <Plug>AirlineSelectTab5
-nmap <leader>6 <Plug>AirlineSelectTab6
-nmap <leader>7 <Plug>AirlineSelectTab7
-nmap <leader>8 <Plug>AirlineSelectTab8
-nmap <leader>9 <Plug>AirlineSelectTab9
-nmap <leader>- <Plug>AirlineSelectPrevTab
-nmap <leader>+ <Plug>AirlineSelectNextTab
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+" call dein#add('vim-airline/vim-airline')
+" let g:airline#extensions#tabline#enabled = 1
+" scriptencoding utf-8
+" let g:airline_powerline_fonts = 1
+" let g:airline_skip_empty_sections = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tmuxline#enabled = 1
+" let g:Powerline_sybols = 'unicode'
+" let g:airline#extensions#tabline#buffer_idx_mode = 1
+" let g:airline#extensions#tabline#buffer_nr_show = 1
+" let g:airline#extensions#tabline#buffer_nr_format = '%s:'
+" let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamecollapse = 1
+" let g:airline#extensions#tabline#fnametruncate = 0
+" let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+" nmap <leader>1 <Plug>AirlineSelectTab1
+" nmap <leader>2 <Plug>AirlineSelectTab2
+" nmap <leader>3 <Plug>AirlineSelectTab3
+" nmap <leader>4 <Plug>AirlineSelectTab4
+" nmap <leader>5 <Plug>AirlineSelectTab5
+" nmap <leader>6 <Plug>AirlineSelectTab6
+" nmap <leader>7 <Plug>AirlineSelectTab7
+" nmap <leader>8 <Plug>AirlineSelectTab8
+" nmap <leader>9 <Plug>AirlineSelectTab9
+" nmap <leader>- <Plug>AirlineSelectPrevTab
+" nmap <leader>+ <Plug>AirlineSelectNextTab
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
 
-" unicode symbols
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.crypt = '🔒'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.notexists = '∄'
-let g:airline_symbols.whitespace = 'Ξ'
+" " unicode symbols
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '◀'
+" let g:airline_symbols.crypt = '🔒'
+" let g:airline_symbols.linenr = '¶'
+" let g:airline_symbols.branch = '⎇'
+" let g:airline_symbols.paste = '∥'
+" let g:airline_symbols.notexists = '∄'
+" let g:airline_symbols.whitespace = 'Ξ'
 
-" powerline symbols
-if get(g:, 'airline_powerline_fonts', 0)
-    let g:airline_left_sep = ''
-    let g:airline_left_alt_sep = ''
-    let g:airline_right_sep = ''
-    let g:airline_right_alt_sep = ''
-    let g:airline_symbols.branch = ''
-    let g:airline_symbols.readonly = ''
-    let g:airline_symbols.linenr = ''
-    let g:airline_symbols.maxlinenr= ''
-endif
+" " powerline symbols
+" if get(g:, 'airline_powerline_fonts', 0)
+"     let g:airline_left_sep = ''
+"     let g:airline_left_alt_sep = ''
+"     let g:airline_right_sep = ''
+"     let g:airline_right_alt_sep = ''
+"     let g:airline_symbols.branch = ''
+"     let g:airline_symbols.readonly = ''
+"     let g:airline_symbols.linenr = ''
+"     let g:airline_symbols.maxlinenr= ''
+" endif
 
 
-augroup Fix_airline_with_unite
-    autocmd FileType unite AirlineRefresh
-    autocmd FileType vimfiler AirlineRefresh
-augroup END
+" augroup Fix_airline_with_unite
+"     autocmd FileType unite AirlineRefresh
+"     autocmd FileType vimfiler AirlineRefresh
+" augroup END
 
-call dein#add('vim-airline/vim-airline-themes')
+" call dein#add('vim-airline/vim-airline-themes')
 
-let g:airline_powerline_fonts=1
-let g:airline_theme='solarized' " dark simple badwolf solarized solarized2
+" let g:airline_powerline_fonts=1
+" let g:airline_theme='solarized' " dark simple badwolf solarized solarized2
 
 set noshowmode
 
@@ -332,10 +332,22 @@ call dein#add('airblade/vim-rooter')
 call dein#add('godlygeek/tabular')
 call dein#add('plasticboy/vim-markdown', {'on_ft' : 'markdown'})
 " call dein#add('itchyny/vim-cursorword')
-call dein#add('t9md/vim-choosewin')
+" call dein#add('t9md/vim-choosewin')
 " invoke with '-'
 nmap  -  <Plug>(choosewin)
 call dein#add('ntpeters/vim-better-whitespace')
 call dein#add('gcmt/wildfire.vim')
 " call dein#add('haya14busa/unite-action-vimfiler_lcd')
 " call dein#add('justinmk/vim-sneak')
+call dein#add('ap/vim-buftabline')
+nmap <leader>1 <Plug>BufTabLine.Go(1)
+nmap <leader>2 <Plug>BufTabLine.Go(2)
+nmap <leader>3 <Plug>BufTabLine.Go(3)
+nmap <leader>4 <Plug>BufTabLine.Go(4)
+nmap <leader>5 <Plug>BufTabLine.Go(5)
+nmap <leader>6 <Plug>BufTabLine.Go(6)
+nmap <leader>7 <Plug>BufTabLine.Go(7)
+nmap <leader>8 <Plug>BufTabLine.Go(8)
+nmap <leader>9 <Plug>BufTabLine.Go(9)
+nmap <leader>0 <Plug>BufTabLine.Go(10)
+let g:buftabline_numbers = 2

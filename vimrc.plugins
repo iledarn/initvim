@@ -231,13 +231,12 @@ nnoremap <silent> <C-p> :<C-u>Denite
 
 nmap <leader>f :Denite -buffer-name=files file_rec<cr>
 " nmap <leader>r :DeniteProjectDir file_mru<cr>
-nmap <leader>b :Unite -no-split -quick-match buffer<cr>
 " let g:unite_split_rule = "botright"
 
 nmap <leader>gs :Gstatus<cr>
 
 nmap <leader>* :Ag <c-r>=expand("<cword>")<cr><cr>
-nmap <leader>// :Ag<space>     
+nmap <leader>// :Ag<space>
 
 " VimFiler
 nmap <leader>\ :VimFiler<cr>

@@ -321,6 +321,7 @@ let g:deoplete#enable_smart_case = 1
 let g:deoplete#auto_completion_start_length = 3
 
 call dein#add('mhinz/vim-startify')
+let g:startify_change_to_vcs_root = 1
 call dein#add('tmux-plugins/vim-tmux-focus-events')
 call dein#add('kana/vim-textobj-user')
 call dein#add('bps/vim-textobj-python')

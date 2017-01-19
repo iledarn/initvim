@@ -353,4 +353,5 @@ nmap <leader>0 <Plug>BufTabLine.Go(10)
 let g:buftabline_numbers = 2
 call dein#add('vim-scripts/SQLComplete.vim')
 call dein#add('mhinz/vim-sayonara')
-nmap <leader>bd :Sayonara<cr>
+nmap <leader>bd :Sayonara!<cr>
+nmap <leader>bdd :Sayonara<cr>

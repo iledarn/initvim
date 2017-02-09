@@ -52,4 +52,4 @@ set nobackup       "no backup files
 set nowritebackup  "only in case you don't want a backup file while editing
 set noswapfile     "no swap files
 " rename the word under the cursor
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/g<Left><Left>
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left>

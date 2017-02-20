@@ -357,3 +357,4 @@ call dein#add('vim-scripts/SQLComplete.vim')
 call dein#add('mhinz/vim-sayonara')
 nmap <leader>bd :Sayonara!<cr>
 nmap <leader>bdd :Sayonara<cr>
+call dein#add('edkolev/tmuxline.vim')

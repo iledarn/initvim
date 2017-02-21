@@ -357,3 +357,6 @@ call dein#add('vim-scripts/SQLComplete.vim')
 call dein#add('mhinz/vim-sayonara')
 nmap <leader>bd :Sayonara!<cr>
 nmap <leader>bdd :Sayonara<cr>
+call dein#add('jpalardy/vim-slime')
+let g:slime_python_ipython = 1
+let g:slime_target = "tmux"

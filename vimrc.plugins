@@ -360,3 +360,4 @@ nmap <leader>bdd :Sayonara<cr>
 call dein#add('jpalardy/vim-slime')
 let g:slime_python_ipython = 1
 let g:slime_target = "tmux"
+call dein#add('edkolev/tmuxline.vim')

@@ -53,3 +53,4 @@ set nowritebackup  "only in case you don't want a backup file while editing
 set noswapfile     "no swap files
 " rename the word under the cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gc<Left><Left>
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
